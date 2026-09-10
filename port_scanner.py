@@ -34,7 +34,8 @@ def scan_ports(target_host, ports_to_scan):
 def main_entry():
     # Standard local loopback for safe and legal testing
     target = "127.0.0.1" 
-    ports = [21, 22, 80, 443, 8080]
+    ports = [21, 22, 80, 443, 8080, 8022]
+
     scan_ports(target, ports)
 
 if __name__ == "__main__":
