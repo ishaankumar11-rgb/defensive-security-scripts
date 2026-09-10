@@ -46,5 +46,30 @@ def main_entry():
     print(f"Security Alert  : {msg}")
     print("-" * 50)
 
-if __name__ == "__main__":
-    main_entry()
+def main_entry():
+    print("-" * 50)
+    print("Defensive Tool: Dynamic Password Strength Analyzer")
+    print("-" * 50)
+    
+    try:
+        # टर्मिनल से लाइव यूजर इनपुट लेने के लिए input() का उपयोग
+        if sys.version_info < 3:
+            user_pass = raw_input("Enter password to analyze: ")
+        else:
+            user_pass = input("Enter password to analyze: ")
+            
+        if not user_pass:
+            print("[!] Error: Password cannot be empty.")
+            return
+
+        score, msg = check_password_strength(user_pass)
+        
+        print("\n[+] Audit Results:")
+        print(f"Entropy Score   : {score}/6")
+        print(f"Security Alert  : {msg}")
+        print("-" * 50)
+        
+    except KeyboardInterrupt:
+        print("\n\nExiting tool.")
+        sys.exit()
+
