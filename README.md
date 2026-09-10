@@ -23,7 +23,7 @@ Open your Linux/Mac/Termux terminal and run the following commands to clone and 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com
+git clone https://github.com/ishaankumar11-rgb/defensive-security-scripts
 
 # 2. Navigate into the directory
 cd defensive-security-scripts
