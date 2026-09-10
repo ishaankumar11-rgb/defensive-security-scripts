@@ -53,7 +53,7 @@ def main_entry():
     
     try:
         # टर्मिनल से लाइव यूजर इनपुट लेने के लिए input() का उपयोग
-        if sys.version_info < 3:
+        if sys.version_info.major < 3:
             user_pass = raw_input("Enter password to analyze: ")
         else:
             user_pass = input("Enter password to analyze: ")
