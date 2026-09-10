@@ -17,6 +17,32 @@ A continuous validation script utilizing the SHA-256 hashing algorithm to monito
 * **Alert System:** Generates immediate timestamped logs if the hash deviates from the established secure baseline.
 
 ---
+## 📦 Installation & Terminal Usage
+
+Open your Linux/Mac/Termux terminal and run the following commands to clone and install the tools globally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com
+
+# 2. Navigate into the directory
+cd defensive-security-scripts
+
+# 3. Install the tools locally
+pip install -e .
+```
+
+### 🛠️ How to Run Directly from Terminal:
+Once installed, you can trigger the scripts from **any directory** in your terminal using these shortcut commands:
+
+* To run the Port Scanner:
+  ```bash
+  sec-scan
+  ```
+* To run the File Integrity Monitor:
+  ```bash
+  sec-monitor
+  ```
 
 ## ⚖️ Disclaimer & Educational Purpose
 
