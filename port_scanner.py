@@ -31,8 +31,12 @@ def scan_ports(target_host, ports_to_scan):
         print("\nCould not connect to server.")
         sys.exit()
 
-if __name__ == "__main__":
+def main_entry():
     # Standard local loopback for safe and legal testing
     target = "127.0.0.1" 
     ports = [21, 22, 80, 443, 8080]
     scan_ports(target, ports)
+
+if __name__ == "__main__":
+    main_entry()
+
