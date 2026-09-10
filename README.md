@@ -10,6 +10,11 @@ A python script utilizing native sockets to scan open ports on local network con
 
 * **Target Host:** Configured to `127.0.0.1` (Localhost) for secure loopback auditing.
 * **Ports Audited:** Standard infrastructure ports including 21 (FTP), 22 (SSH), 80 (HTTP), 443 (HTTPS), and 8080.
+### 2. File Integrity Monitor (`file_monitor.py`)
+A continuous validation script utilizing the SHA-256 hashing algorithm to monitor critical file loops for unauthorized changes.
+
+* **Automation:** Scans target parameters at a configurable interval (Default: 5 seconds).
+* **Alert System:** Generates immediate timestamped logs if the hash deviates from the established secure baseline.
 
 ---
 
