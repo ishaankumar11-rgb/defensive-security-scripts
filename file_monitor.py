@@ -54,7 +54,7 @@ def monitor_file(filepath, interval=5):
         print("\nMonitoring stopped by user.")
         sys.exit()
 
-if __name__ == "__main__":
+def main_entry():
     # Create a temporary dummy file for safe and isolated local testing
     test_file = "test_integrity.txt"
     if not os.path.exists(test_file):
@@ -62,3 +62,7 @@ if __name__ == "__main__":
             f.write("This is a secure baseline configuration statement.")
             
     monitor_file(test_file, interval=5)
+
+if __name__ == "__main__":
+    main_entry()
+
