@@ -4,7 +4,7 @@ setup(
     name="defensive-security-scripts",
     version="0.1.0",
     packages=find_packages(),
-    py_modules=["port_scanner", "file_monitor"],
+    py_modules=["port_scanner", "file_monitor", "password_checker"],
     install_requires=[
         # भविष्य में कोई बाहरी लाइब्रेरी चाहिए हो, तो यहाँ लिखें
     ],
@@ -12,10 +12,11 @@ setup(
         "console_scripts": [
             "sec-scan=port_scanner:main_entry",
             "sec-monitor=file_monitor:main_entry",
+            "sec-check=password_checker:main_entry",
         ],
     },
     author="Ishaan Kumar Giri",
-    description="CLI tools for local security auditing and file integrity monitoring.",
+    description="CLI tools for local security auditing and password verification.",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
