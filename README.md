@@ -15,6 +15,11 @@ A continuous validation script utilizing the SHA-256 hashing algorithm to monito
 
 * **Automation:** Scans target parameters at a configurable interval (Default: 5 seconds).
 * **Alert System:** Generates immediate timestamped logs if the hash deviates from the established secure baseline.
+### 3. Password Strength Analyzer (`password_checker.py`)
+A defensive auditing utility that evaluates the cryptographic complexity (entropy score) of authentication strings based on baseline security standards.
+
+* **Automation Shortcut:** Run globally via terminal using the `sec-check` command.
+* **Analysis Criteria:** Audits length, uppercase/lowercase diversity, numeric inclusion, and special symbol density.
 
 ---
 ## 📦 Installation & Terminal Usage
