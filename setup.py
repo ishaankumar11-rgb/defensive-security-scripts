@@ -17,7 +17,7 @@ setup(
         ],
     },
     author="Ishaan Kumar Giri",
-    description="CLI tools for local security auditing and password verification.",
+    description="CLI tools for local security auditing and web payload sanitization.",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
