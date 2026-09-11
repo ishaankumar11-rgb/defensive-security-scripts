@@ -17,6 +17,11 @@ A continuous validation script utilizing the SHA-256 hashing algorithm to monito
 * **Alert System:** Generates immediate timestamped logs if the hash deviates from the established secure baseline.
 ### 3. Password Strength Analyzer (`password_checker.py`)
 A defensive auditing utility that evaluates the cryptographic complexity (entropy score) of authentication strings based on baseline security standards.
+### 4. SQL Injection Input Sanitizer (`sql_sanitizer.py`)
+A runtime firewall simulation utility that evaluates user payloads against high-risk SQL Injection (SQLi) regex signatures to intercept data breach attempts.
+
+* **Automation Shortcut:** Trigger directly from any directory using the `sec-clean` command.
+* **Security Mechanics:** Implements robust signature matching to detect destructive commands (`UNION SELECT`, `DROP TABLE`) and logical bypasses (`OR 1=1`).
 
 * **Automation Shortcut:** Run globally via terminal using the `sec-check` command.
 * **Analysis Criteria:** Audits length, uppercase/lowercase diversity, numeric inclusion, and special symbol density.
