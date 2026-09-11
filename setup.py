@@ -4,7 +4,7 @@ setup(
     name="defensive-security-scripts",
     version="0.1.0",
     packages=find_packages(),
-    py_modules=["port_scanner", "file_monitor", "password_checker"],
+    py_modules=["port_scanner", "file_monitor", "password_checker", "sql_sanitizer"],
     install_requires=[
         # भविष्य में कोई बाहरी लाइब्रेरी चाहिए हो, तो यहाँ लिखें
     ],
