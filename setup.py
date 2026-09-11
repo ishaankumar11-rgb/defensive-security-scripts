@@ -13,6 +13,7 @@ setup(
             "sec-scan=port_scanner:main_entry",
             "sec-monitor=file_monitor:main_entry",
             "sec-check=password_checker:main_entry",
+            "sec-clean=sql_sanitizer:main_entry",
         ],
     },
     author="Ishaan Kumar Giri",
