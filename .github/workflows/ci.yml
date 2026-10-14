@@ -1,0 +1,21 @@
+name: CI Pipeline
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code download karo
+        uses: actions/checkout@v4
+
+      - name: Node.js setup karo
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Dependencies install karo
+        run: npm install
+
+      - name: Tests chalao
+        run: npm test
