@@ -1,9 +1,7 @@
-[
 
-![Python CI](https://github.com/ishaankumar11-rgb/defensive-security-scripts/actions/workflows/ci.yml/badge.svg)
+[![Python CI](https://github.com/ishaankumar11-rgb/defensive-security-scripts/actions/workflows/ci.yml/badge.svg)]
 
-](https://github.com/ishaankumar11-rgb/defensive-security-scripts/actions/workflows/ci.yml)
-
+(https://github.com/ishaankumar11-rgb/defensive-security-scripts/actions/workflows/ci.yml)
 # Defensive Security Scripts 🛡️
 
 A collection of secure, legal, and educational Python scripts designed for network auditing, baseline vulnerability assessments, and defensive security workflows.
