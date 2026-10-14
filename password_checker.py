@@ -59,3 +59,6 @@ def main_entry():
         print("\n\nExiting tool.")
         sys.exit()
 
+
+if __name__ == "__main__":
+    main_entry()
