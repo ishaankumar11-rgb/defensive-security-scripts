@@ -1,21 +1,19 @@
-name: CI Pipeline
+name: Python CI
 
 on: [push]
 
 jobs:
-  build-and-test:
+  syntax-check:
     runs-on: ubuntu-latest
     steps:
       - name: Code download karo
         uses: actions/checkout@v4
 
-      - name: Node.js setup karo
-        uses: actions/setup-node@v4
+      - name: Python setup karo
+        uses: actions/setup-python@v5
         with:
-          node-version: 20
+          python-version: "3.11"
 
-      - name: Dependencies install karo
-        run: npm install
-
-      - name: Tests chalao
-        run: npm test
+      - name: Python files ka syntax check karo
+        run: |
+          python -m py_compile *.py
