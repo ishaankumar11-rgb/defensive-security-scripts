@@ -1,4 +1,9 @@
 
+[
+
+![Python CI](https://github.com/ishaankumar11-rgb/defensive-security-scripts/actions/workflows/ci.yml/badge.svg)
+
+](https://github.com/ishaankumar11-rgb/defensive-security-scripts/actions/workflows/ci.yml)
 # Defensive Security Scripts 🛡️
 
 A collection of secure, legal, and educational Python scripts designed for network auditing, baseline vulnerability assessments, and defensive security workflows.
@@ -55,6 +60,17 @@ Once installed, you can trigger the scripts from **any directory** in your termi
   sec-monitor
   ```
 
+## CI Pipeline
+
+Every push to `main` runs a GitHub Actions workflow (`.github/workflows/ci.yml`) that:
+
+- **Syntax check:** compiles all Python files with `python -m py_compile`
+- **Security scan:** runs [Bandit](https://github.com/PyCQA/bandit) to find common Python security issues
+
+## Usage
+
+```bash
+python3 password_checker.py
 ## ⚖️ Disclaimer & Educational Purpose
 
 This repository is maintained strictly for **educational, compliance, and defensive purposes**. The utilities contained herein are intended to assist developers and security administrators in auditing their own local systems and authorized network loops. 
