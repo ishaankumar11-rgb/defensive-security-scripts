@@ -17,3 +17,9 @@ jobs:
       - name: Python files ka syntax check karo
         run: |
           python -m py_compile *.py
+
+      - name: Security scan karo (bandit)
+        continue-on-error: true
+        run: |
+          pip install bandit
+          bandit -r . -ll
