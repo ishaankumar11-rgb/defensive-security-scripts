@@ -34,20 +34,6 @@ def check_password_strength(password):
 
 def main_entry():
     print("-" * 50)
-    print("Defensive Tool: Password Strength Analyzer")
-    print("-" * 50)
-    
-    # Safe fallback input simulation for automation testing
-    sample_pass = "Secure@123_Pass"
-    score, msg = check_password_strength(sample_pass)
-    
-    print(f"Testing Password: {sample_pass}")
-    print(f"Entropy Score   : {score}/6")
-    print(f"Security Alert  : {msg}")
-    print("-" * 50)
-
-def main_entry():
-    print("-" * 50)
     print("Defensive Tool: Dynamic Password Strength Analyzer")
     print("-" * 50)
     
